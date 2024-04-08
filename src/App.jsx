@@ -43,21 +43,20 @@ function App() {
     }
    }, [coords])
    
-  const clima = weather?.weather[0].description
-  const cod = weather?.weather[0].id
+  const cod =  weather?.weather[0].id 
   let fondo =""
 
-  if (cod>=200 && cod<=232) fondo = "app fondo_1"
-  if (cod>=300 && cod<=504 || cod>=520 && cod<=531 || cod==771) fondo = "app fondo_2"
-  if (cod==511) fondo = "app fondo_3"
-  if (cod>=600 && cod<=622) fondo = "app fondo_4"  
-  if (cod==800) fondo = "app fondo_5"  
-  if (cod>=801 && cod<=804) fondo = "app fondo_6"  
-  if (cod==701) fondo = "app fondo_7"
-  if (cod==711) fondo = "app fondo_8"
-  if (cod>=721 && cod<=741) fondo = "app fondo_9" 
-  if (cod==731 || cod==751 || cod==751) fondo = "app fondo_10"  
-  if (cod==781) fondo = "app fondo_11"  
+   if (cod>=200 && cod<=232) fondo = "app fondo_1"  
+   if (cod>=300 && cod<=504 || cod>=520 && cod<=531 || cod==771) fondo = "app fondo_2" 
+   if (cod==511) fondo = "app fondo_3" 
+   if (cod>=600 && cod<=622) fondo = "app fondo_4"  
+   if (cod==800) fondo = "app fondo_5" 
+   if (cod>=801 && cod<=804) fondo = "app fondo_6"  
+   if (cod==701) fondo = "app fondo_7" 
+   if (cod==711) fondo = "app fondo_8" 
+   if (cod>=721 && cod<=741) fondo = "app fondo_9"  
+   if (cod==731 || cod==751 || cod==761) fondo = "app fondo_10" 
+   if (cod==781) fondo = "app fondo_11"
   
   return (
 
